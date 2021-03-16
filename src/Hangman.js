@@ -80,7 +80,7 @@ render() {
       <p className='Hangman-btns'>
         {!gameOver ? this.generateButtons() :
           `You lost: ${this.state.answer}`}</p>
-      <button onClick={this.reset}>Restart</button>
+      <button id = 'reset' onClick={this.reset}>Restart</button>
     </div>
   );
 }
